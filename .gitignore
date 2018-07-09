@@ -1,55 +1,32 @@
-# mac os x hidden file
-.DS_Store
-
-# built tools
-/bin/
-
-# built tests
-/test/
-
-# test models
-/cmdstan/src/test/test-models/*
-!/cmdstan/src/test/test-models/*.stan
-!/cmdstan/src/test/test-models/*.R
-
-# local make include
-*/make/local
-
-# /doc/
-*/doc
-*/doc/*.pdf
-
-# temporary latex files
-*.aux
-*.bbl
-*.blg
-*.cb
-*.cb2
-*.idx
-*.log
-*.out
-*.upa
-*.brf
-*.toc
-*.fdb_latexmk
-*.fls
-*.ilg
-*.ind
-
-# built manual
-cmdstan/src/docs/**/*.pdf
-
-output.csv
-# /
-/stan/demo
-/stan/models
-/stan/test
-*.dSYM
-/bin
+# tests
+/test/*/*/*/*/*/*
+/test/*/*/*/*/*
+/test/*/*/*/*
+/test/*/*/*
+/test/*/*
+/test/*
+!/test/*/*/*/*/*/*/
+!/test/*/*/*/*/*/
+!/test/*/*/*/*/
+!/test/*/*/*/
+!/test/*/*/
+!/test/*/
+!/test/*/*/*/*/*/*.*
+!/test/*/*/*/*/*.*
+!/test/*/*/*/*.*
+!/test/*/*/*.*
+!/test/*/*.*
+!/test/*.*
+/test/**/*_generated_*_test.cpp
+/test/**/*.xml
+/test/dummy.cpp
+/test/**/*.so
 
 # other binary
 *.o
+*.o-*
 *.exe
+*.a
 
 
 # temporary latex files
@@ -64,27 +41,18 @@ output.csv
 \#*#
 
 # temporary vim files
-*.swp
+.*.swp
 
 # depedencies files
 *.d
-*.hpp.d.*
+*.d.*
 .Rproj.user
-stan.Rproj
 .kdev4/
-stan.kdev4
 .Rapp.history
 
-# tests: compiled models
-/stan/src/test/test-models/*.hpp
-/stan/src/test/test-models/*/*.hpp
-/stan/src/test/test-models/*/*/*.hpp
-/stan/src/test/test-models/*/*/*/*.hpp
-/stan/src/test/test-models/*/*/*/*/*.hpp
-/stan/src/test/test-models/*/*/*/*/*/*.hpp
-/stan/src/test/test-models/*/*/*/*/*/*/*.hpp
-!/stan/src/test/test-models/**/*.stan
-!/stan/src/test/test-models/**/.gitignore
 
-# tests: generated agrad tests
-/stan/src/test/prob/*/*_generated_*_test.cpp
+# For the Mac
+*.DS_Store
+
+# local make include
+/make/local
